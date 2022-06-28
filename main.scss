@@ -8,6 +8,13 @@ html {
 body {
   font-family: $font-default;
   margin: 0;
+
+  @media (min-width: 40rem) {
+    html {
+      font-size: 125%;
+    }
+  }
+  
 }
 
 .container {
@@ -25,6 +32,13 @@ body {
   align-items: center;
   padding: $size-default * 3 0;
   box-sizing: border-box;
+
+  @media (min-width: 40rem) {
+    .container {
+      padding: 3rem 0;
+    }
+  }
+  
 }
 
 .sass-introduction {
@@ -49,6 +63,14 @@ body {
   margin: $size-default * 2 0;
   width: 90%;
   box-sizing: border-box;
+
+  @media (min-width: 40rem) {
+    .sass-introduction,
+    .sass-details {
+      width: 30rem;
+    }
+  }
+  
 }
 
 .section-header {

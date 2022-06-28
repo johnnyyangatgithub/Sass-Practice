@@ -12,6 +12,11 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
 }
+@media (min-width: 40rem) {
+  body html {
+    font-size: 125%;
+  }
+}
 
 .container {
   display: -webkit-box;
@@ -23,6 +28,11 @@ body {
   align-items: center;
   padding: 3rem 0;
   box-sizing: border-box;
+}
+@media (min-width: 40rem) {
+  .container .container {
+    padding: 3rem 0;
+  }
 }
 
 .sass-introduction {
@@ -47,6 +57,12 @@ body {
   margin: 2rem 0;
   width: 90%;
   box-sizing: border-box;
+}
+@media (min-width: 40rem) {
+  .sass-details .sass-introduction,
+.sass-details .sass-details {
+    width: 30rem;
+  }
 }
 
 .section-header {
