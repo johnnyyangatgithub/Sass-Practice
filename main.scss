@@ -1,21 +1,6 @@
-// 1. To pre-defined properties in order to uses later in the future
-// $main-color:#521751;
-// 2. Can also invoke an array of variables.
-// $border-default: 0.05rem solid $main-color;
-// 3. Can also invoke variables with comma(,)
-$font-default:  Arial, sans-serif;
+@import "typography.scss";
+@import "_variables.scss";
 
-// 4. Can also invoke map,which caontains pairs of variables. 
-// Then use map-get() function to get variables.
-$colors: (main: #521751, secondary: #fa923f);
-
-// 5. Build-in method to use lighten() func.
-
-// 6. Mathmatical method
-$size-default: 1rem;
-$size-tiny: 0.2rem;
-
-@import "typography.css";
 html {
   font-size: 94.75%;
 }
