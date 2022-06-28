@@ -100,4 +100,8 @@ body {
   border-color: #fa923f;
 }
 
+.documentation-link.func {
+  margin-top: 128px;
+}
+
 /*# sourceMappingURL=main.css.map */

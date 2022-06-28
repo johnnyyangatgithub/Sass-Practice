@@ -22,3 +22,10 @@ $size-tiny: 0.2rem;
 
 
 // 8. Inheritance
+
+// 9. A mixin’s name can be any Sass identifier
+//    and it can contain any statement other than top-level statements. 
+//    They can be used to encapsulate styles that can be dropped into a single style rule; 
+//    they can contain style rules of their own that can be nested in 
+//    other rules or included at the top level of the stylesheet; 
+//    or they can just serve to modify variables.
