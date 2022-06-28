@@ -3,17 +3,15 @@
 
 html {
   font-size: 94.75%;
+
+  @media (min-width: 40rem) {
+      font-size: 125%;
+  }
 }
 
 body {
   font-family: $font-default;
   margin: 0;
-
-  @media (min-width: 40rem) {
-    html {
-      font-size: 125%;
-    }
-  }
   
 }
 
@@ -34,21 +32,28 @@ body {
   box-sizing: border-box;
 
   @media (min-width: 40rem) {
-    .container {
       padding: 3rem 0;
-    }
   }
   
 }
 
-.sass-introduction {
+.sass-section {
   border: 0.05rem solid map-get($colors, main);
   background: lighten(map-get($colors, main), 70%);
   padding: $size-default * 2;
   text-align: center;
-  box-shadow: $size-tiny $size-tiny 0.5 * $size-tiny #ccc;
   width: 90%;
   box-sizing: border-box;
+  @media (min-width: 40rem) {
+    width: 30rem;
+  }
+}
+
+.sass-introduction {
+  
+  @extend .sass-section;
+
+  box-shadow: $size-tiny $size-tiny 0.5 * $size-tiny #ccc;
 }
 
 .sass-introduction p {
@@ -56,20 +61,8 @@ body {
 }
 
 .sass-details {
-  border: 0.05rem solid map-get($colors, main);
-  background: #fae5ff;
-  padding: $size-default;
-  text-align: center;
   margin: $size-default * 2 0;
-  width: 90%;
-  box-sizing: border-box;
-
-  @media (min-width: 40rem) {
-    .sass-introduction,
-    .sass-details {
-      width: 30rem;
-    }
-  }
+  @extend .sass-section;
   
 }
 
@@ -112,17 +105,17 @@ body {
   border-color: map-get($colors, secondary);
 }
 
-@media (min-width: 40rem) {
-  html {
-    font-size: 125%;
-  }
+// @media (min-width: 40rem) {
+//   html {
+//     font-size: 125%;
+//   }
 
-  .container {
-    padding: 3rem 0;
-  }
+//   .container {
+//     padding: 3rem 0;
+//   }
 
-  .sass-introduction,
-  .sass-details {
-    width: 30rem;
-  }
-}
+//   .sass-introduction,
+//   .sass-details {
+//     width: 30rem;
+//   }
+// }

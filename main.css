@@ -7,15 +7,15 @@
 html {
   font-size: 94.75%;
 }
+@media (min-width: 40rem) {
+  html {
+    font-size: 125%;
+  }
+}
 
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-}
-@media (min-width: 40rem) {
-  body html {
-    font-size: 125%;
-  }
 }
 
 .container {
@@ -30,19 +30,27 @@ body {
   box-sizing: border-box;
 }
 @media (min-width: 40rem) {
-  .container .container {
+  .container {
     padding: 3rem 0;
   }
 }
 
-.sass-introduction {
+.sass-section, .sass-details, .sass-introduction {
   border: 0.05rem solid #521751;
   background: #f4daf4;
   padding: 2rem;
   text-align: center;
-  box-shadow: 0.2rem 0.2rem 0.1rem #ccc;
   width: 90%;
   box-sizing: border-box;
+}
+@media (min-width: 40rem) {
+  .sass-section, .sass-details, .sass-introduction {
+    width: 30rem;
+  }
+}
+
+.sass-introduction {
+  box-shadow: 0.2rem 0.2rem 0.1rem #ccc;
 }
 
 .sass-introduction p {
@@ -50,19 +58,7 @@ body {
 }
 
 .sass-details {
-  border: 0.05rem solid #521751;
-  background: #fae5ff;
-  padding: 1rem;
-  text-align: center;
   margin: 2rem 0;
-  width: 90%;
-  box-sizing: border-box;
-}
-@media (min-width: 40rem) {
-  .sass-details .sass-introduction,
-.sass-details .sass-details {
-    width: 30rem;
-  }
 }
 
 .section-header {
@@ -102,19 +98,6 @@ body {
   color: white;
   background: #fa923f;
   border-color: #fa923f;
-}
-
-@media (min-width: 40rem) {
-  html {
-    font-size: 125%;
-  }
-  .container {
-    padding: 3rem 0;
-  }
-  .sass-introduction,
-.sass-details {
-    width: 30rem;
-  }
 }
 
 /*# sourceMappingURL=main.css.map */
